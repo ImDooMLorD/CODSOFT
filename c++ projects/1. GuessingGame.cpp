@@ -3,17 +3,13 @@
 #include<time.h>
 using namespace std;
 
-int generateRandomNo()
-{
-    return (rand()%100);
-}
 
 int main()
 {
     srand( time(NULL) );                      // Seeding to rand() func so that it doesn't give same value always.
     int randomNo, count = 0;
     int guessedNo = -1;
-    randomNo = generateRandomNo();
+    randomNo = rand()%100;
 
     while (randomNo != guessedNo)
     {
