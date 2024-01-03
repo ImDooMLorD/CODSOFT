@@ -4,7 +4,7 @@ int main()
 {
 
     int choice;
-    float i,j; 
+    float i, j;
     while (1)
     {
         cout << "\n\n1. Addition";
@@ -22,21 +22,21 @@ int main()
         {
             cout << "Enter Two Numbers for Addition : ";
             cin >> i >> j;
-            cout << "------\tResult = " << i + j;
+            cout << "------\tResult of " << i << " + " << j << " = " << i + j;
             break;
         }
         case 2:
         {
             cout << "Enter Two Numbers for Substraction : ";
             cin >> i >> j;
-            cout << "------\tResult = " << i - j;
+            cout << "------\tResult of " << i << " - " << j << " = " << i - j;
             break;
         }
         case 3:
         {
             cout << "Enter Two Numbers for Multiplication : ";
             cin >> i >> j;
-            cout << "------\tResult = " << i * j;
+            cout << "------\tResult of " << i << " * " << j << " = " << i * j;
             break;
         }
         case 4:
@@ -44,7 +44,7 @@ int main()
             cout << "Enter Two Numbers for Division : ";
             cin >> i >> j;
             if (j != 0)
-                cout << "-----\tResult = " << i / j;
+                cout << "------\tResult of " << i << " / " << j << " = " << i / j;
             else
                 cout << "??????\tDivision by Zero(0) not possible";
             break;
@@ -57,9 +57,7 @@ int main()
         {
             cout << "<><><><INVALID INPUT><><><>";
         }
-
-   
-        }  
+        }
     }
     return 0;
 }
