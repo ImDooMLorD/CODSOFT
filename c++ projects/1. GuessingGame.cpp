@@ -9,7 +9,7 @@ int main()
     srand( time(NULL) );                      // Seeding to rand() func so that it doesn't give same value always.
     int randomNo, count = 0;
     int guessedNo = -1;
-    randomNo = rand()%100;
+    randomNo = rand()%100;              // Generating Random No
 
     while (randomNo != guessedNo)
     {

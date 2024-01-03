@@ -3,7 +3,8 @@ using namespace std;
 int main()
 {
 
-    int choice, i, j, n;
+    int choice;
+    float i,j; 
     while (1)
     {
         cout << "\n\n1. Addition";
@@ -12,7 +13,7 @@ int main()
         cout << "\n4. Division ";
         cout << "\n5. EXIT program";
 
-        cout << "\n\n ENTER YOUR CHOICE : ";
+        cout << "\n\n ENTER YOUR CHOICE (1,2,3,4,5) : ";
         cin >> choice;
 
         switch (choice)

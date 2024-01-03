@@ -43,17 +43,15 @@ bool checkResult(char t[3][3])
         for (int j = 0; j < 3; j++)
         {
             // Checks for same X/O in a row
-            if (t[i][0] == t[i][1])
-            {
-                if (t[i][2] == t[i][0])
-                {
+            if ((t[i][0] == t[i][1])&&(t[i][2] == t[i][0]))
+            { 
                     showBoard(&t[0][0]);
                     if (t[i][2] == 'X')
                     cout << "\n\n\n\t\t~~~~~~~~ Player - X Wins ~~~~~~~~~\n\n\n";
                     if (t[i][2] == 'O')
                     cout << "\n\n\n\t\t~~~~~~~~ Player - O Wins ~~~~~~~~~\n\n\n";
                     return false;
-                }
+                
             }
 
             // Checks for same X/O in a column
